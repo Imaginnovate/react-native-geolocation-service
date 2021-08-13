@@ -40,7 +40,27 @@ const Geolocation = {
 
   stopObserving: function () {
     throw new Error('Method not supported by browser');
-  }
+  },
+
+  initoateGeoFencing: function(coordinate) {
+     navigator.geolocation.initoateGeoFencing(coordinate);
+  },
+
+  getLocationStatus: function(callback) {
+    navigator.geolocation.getLocationStatus(callback);
+  }, 
+
+  resetLocationManagerSettings: function(distanceFilter) {
+    navigator.geolocation.resetLocationManagerSettings(distanceFilter);
+  }, 
+
+  resetGeofences: function(listOfEnterGeofence) {
+    navigator.geolocation.resetGeofences(listOfEnterGeofence);
+  },
+
+  openLocationSettings: function(coordinates) {
+    navigator.geolocation.openLocationSettings(coordinates);
+  }, 
 };
 
 export default Geolocation;

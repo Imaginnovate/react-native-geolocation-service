@@ -108,7 +108,28 @@ const Geolocation = {
 
       subscriptions = [];
     }
+  },
+
+  initoateGeoFencing: (coordinates) => {
+    RNFusedLocation.initoateGeoFencing(coordinates);
+  },
+
+  getLocationStatus:(callback) => {
+    RNFusedLocation.getLocationStatus(callback);
+  },
+
+  resetLocationManagerSettings:(distanceFilter) => {
+    RNFusedLocation.resetLocationManagerSettings(distanceFilter);
+  },
+
+  resetGeofences:(listOfEnterGeofence) => {
+    RNFusedLocation.resetGeofences(listOfEnterGeofence);
+  },
+
+  openLocationSettings: (coordinates) => {
+    RNFusedLocation.openLocationSettings(coordinates);
   }
+
 };
 
 export default Geolocation;

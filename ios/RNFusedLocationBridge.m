@@ -23,4 +23,11 @@ _RCT_EXTERN_REMAP_METHOD(
 
 _RCT_EXTERN_REMAP_METHOD(stopObserving, stopLocationUpdate, false)
 
+RCT_EXTERN_METHOD(getLocationStatus: (RCTResponseSenderBlock)callback)
+RCT_EXTERN_METHOD(initoateGeoFencing: (NSString *)coordinate)
+RCT_EXTERN_METHOD(resetGeofences: (NSString *)geofences)
+RCT_EXTERN_METHOD(openLocationSettings: (NSString *)coordinate)
+RCT_EXTERN_METHOD(resetLocationManagerSettings: (NSString *)distanceFilter)
+
 @end
+
